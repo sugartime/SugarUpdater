@@ -1,0 +1,26 @@
+{
+	children:
+	[
+		{
+			name : "uptodate",
+			type : "label",
+			font : "bold",
+			h-align: "fill",
+			v-indent: 3
+		},
+		{
+			name : "uptodate_longer",
+			type : "label",
+			font : "-2",
+			h-align: "fill",
+			v-indent: 3
+		},
+		{
+			name : "action_ok",
+			type : "button",
+			grow : "|-",
+			v-align: "bottom",
+			h-align: "right"
+		}
+	]
+}

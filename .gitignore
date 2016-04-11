@@ -1,0 +1,11 @@
+release-*/
+/*.jar
+*.log
+*.app
+build
+.classpath
+.DS_Store
+*.swp
+tools/pmd.html
+tools/pmd.xml
+/bin/

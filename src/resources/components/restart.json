@@ -1,0 +1,25 @@
+{
+	children:
+	[
+		{
+			name : "readytoinstall",
+			type : "label",
+			font : "bold",
+			h-align: "fill",
+			v-indent: 4
+		},
+		{
+			type : "progressbar",
+			h-span: 2,
+			height: 18,
+			h-align: "fill",
+			grow: "-",
+			v-indent: 4
+		},
+		{
+			name : "action_restart",
+			type : "button",
+			h-align : right
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+    columns: 2,
+    children: 
+    [
+        {
+        	name : "logo",
+        	type : "label",
+        	h-align: "center",
+        	height: 90,
+        	width: 90
+        },
+        {
+        	name : "main-composite",
+        	v-align : "fill",
+        	h-align : "fill",
+		grow: "-|"
+	}
+    ] 
+}

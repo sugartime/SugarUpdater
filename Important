@@ -1,0 +1,4 @@
+1. 프로젝트 우클릭 - New - Source Folder 해서 src 추가
+2. 프로젝트 우클릭 - Properties - Java Build Path - Libraries - Add Library -Jre System Library 추가
+3. 프로젝트 우클릭 - Properties - Java Build Path - Libraries - Add Jars - lib 폴더안의 jar 파일 전체 추가
+      ※ swt-4.2-cocoa64.jar 는 제외  swt-4.2-cocoa64.jar 를 swt-4.2-cocoa32_64.jar 로 대체  

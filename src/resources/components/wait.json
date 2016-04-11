@@ -1,0 +1,26 @@
+{
+	children:
+	[
+		{
+			name : "title",
+			type : "label",
+			font : "bold",
+			h-align: "fill",
+			v-indent: 4
+		},
+		{
+			type : "progressbar",
+			h-span: 2,
+			height: 18,
+			h-align: "fill",
+			grow: "-",
+			indeterminate: true,
+			v-indent: 4
+		},
+		{
+			name : "action_abort",
+			type : "button",
+			h-align : right
+		}
+	]
+}

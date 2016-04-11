@@ -1,0 +1,64 @@
+{
+	columns : 3,
+	children:
+	[
+		{
+			h-span: 3,
+			name : "title",
+			type : "label",
+			font : "bold",
+			h-align: "fill",
+			v-indent: 3
+		},
+		{
+			h-span: 3,   
+			name : "question",
+			type : "label",
+			font : "-2",	
+			h-align: "fill",
+			v-indent: 3
+		},
+		{
+			h-span: 3,        			
+			name : "question_mandatory",
+			type : "label",
+			font : "-2",
+			h-align: "fill",
+			v-indent: 3
+		},
+		{
+			h-span: 3,        			
+			name : "changelog_title",
+			type : "label",
+			font : "bold -2",
+			v-indent: 15
+		},
+		{
+			name : "changelog",
+			type : "changelogtable",
+			h-span: 3,        			
+			grow : "|-",
+			v-align: "fill",
+			h-align: "fill"
+		},
+		{
+			name : "action_skip",
+			type : "button",
+			v-align: bottom,
+			grow : "-",
+			v-indent: 3
+		},
+		{
+			name : "action_remindlater",
+			type : "button",
+			v-align: bottom,
+			h-align : "right"
+		},
+		{
+			name : "action_install",
+			type : "button",
+			v-align: bottom,
+			h-align : "right"
+		}
+	]
+}

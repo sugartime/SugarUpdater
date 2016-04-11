@@ -1,0 +1,39 @@
+body {
+	font-family:sans-serif;
+	font-size: 70%;
+}
+img {
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 80px;
+	width: 80px;
+}
+th {
+	padding-left: 5px;
+	border-bottom: 1px solid #e7eaf1;
+	font-weight:bold;
+	text-align:left;
+	background-color: #e6edff;
+}
+table + table {
+	margin-top: 0.5cm;
+}
+td.image {
+	vertical-align: top;
+}
+ul {
+	margin-top: 5px;
+	margin-left: 20px;
+}
+td.contents {
+	padding-bottom: 0px;
+	padding: 5px;
+	width: 80%;
+}
+table {
+	width: 100%;
+	border: 1px solid  #e7eaf1;	
+	border-spacing: 0px;
+	border-collapse: separate;
+	*border-collapse: expression('separate', cellSpacing = '0px');
+}
