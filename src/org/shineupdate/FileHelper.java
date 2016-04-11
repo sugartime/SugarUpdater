@@ -55,11 +55,20 @@ public final class FileHelper {
 			zipFile.close();
 
 			/* Look for ".app" */
+			/*
 			for (File file : tempDir.listFiles()) {
 				if (file.getName().endsWith(".app") && file.isDirectory()) {
 					return file;
 				}
 			}
+			*/
+			
+			for (File file : tempDir.listFiles()) {
+				if (file.getName().endsWith(".exe")) {
+					return file;
+				}
+			}
+
 
 			Preconditions.checkState(false, "no .app found in tempdir: %s", tempDir);
 			return null;

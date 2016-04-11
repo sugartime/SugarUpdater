@@ -41,7 +41,8 @@ public final class VersionDescription {
 		L.debug("parsing version-description");
 
 		/* replace window-style line-endings by sane ones */
-		String desc			  = description.replace("\\r\\n", "\n");
+		//String desc			  = description.replace("\\r\\n", "\n");
+		String desc			  = description.replaceAll("(\r\n)","\n");  //to youngil
 
 		/* split into section */
 		List<String> sections = Lists.newArrayList(Splitter.on("\n\n").split(desc));

@@ -6,7 +6,10 @@ public final class Test {
 
 	public static void main(final String args[]) {
 		System.setProperty("org.slf4j.simplelogger.defaultlog", "debug");
-		ShineUpdate.instantiate("https://dl.dropbox.com/u/168982/KassaRelease/latest", "Test App", "testXYZ", "1.7.2");
+		//ShineUpdate.instantiate("https://dl.dropbox.com/u/168982/KassaRelease/latest", "Test App", "testXYZ", "1.7.2");
+		
+		ShineUpdate.instantiate("http://localhost/distribute_test/", "Test App", "testXYZ", "1.7.2");
+		
 		ShineUpdate.instance().check(true);
 		System.exit(0);
 	}

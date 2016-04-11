@@ -1,0 +1,7 @@
+version:1.7.3
+mandatory:true
+win32:http://localhost/distribute_test/cports.zip
+win32_sha1:f5a181316e67a2e251b85337c6af8c69e16dee2c
+win32_size:73312
+
+imsitest
