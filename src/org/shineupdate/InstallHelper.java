@@ -19,19 +19,27 @@ public final class InstallHelper {
 
 	//~ Methods --------------------------------------------------------------------------------------------------------
 
+	//downloadTempFile : 웹에서 다운로드한팡리
+	//application : test
 	public static String prepareCommand(final File downloadTempFile, final File application) {
 
 		/* copy script to another tempfile */
 		try {
+			
 			File helperFile = File.createTempFile(StaticConfig.TEMP_FILE_PREFIX + "helper-" + ShineUpdate.instance().applicationUID , ".jar");
 
+			//org.shineupdate.helper-testXYZ3481609727329612875
 			Files.copy(ResourceStreamSupplier.create().getSupplier("installhelper.jar"), helperFile);
+			
 
 			/* run installhelper with parameters */
 			String b64Download = Base64.encodeBase64String(downloadTempFile.getAbsolutePath().getBytes());
 			String b64Target   = Base64.encodeBase64String(application.getAbsolutePath().getBytes());
 			String cmd		   = helperFile.getAbsolutePath() + " " + b64Download + " " + b64Target;
 
+			//b64Target:RDpcUHJvamVjdF9TV1RcU3VnYXJVcGRhdGVyXHRlc3Q=
+			//C:\Users\End-User\AppData\Local\Temp\org.shineupdate.helper-testXYZ3070740211324201107.jar QzpcVXNlcnNcRW5kLVVzZXJcQXBwRGF0YVxMb2NhbFxUZW1wXDE0NjAzNzU3NjU2NDgtMFxjcG9ydHMuZXhl RDpcUHJvamVjdF9TV1RcU3VnYXJVcGRhdGVyXHRlc3Q=
+			
 			return cmd;
 
 		} catch (final IOException e) {
